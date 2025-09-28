@@ -1,4 +1,4 @@
-# src/utils/cli.py
+# src/utils/inner_tui.py
 """
 A mock command-line interface (CLI) utility module.
 This provides the necessary functions for the menu system in app.py to run,

@@ -1,4 +1,4 @@
-from src.utils import cli
+from src.utils import main_tui
 from src.apps.t_feature import app
 
 APPNAVN = "Github API | Willads"
@@ -6,7 +6,7 @@ APPNAVN = "Github API | Willads"
 
 def app():
     """Main app entry point - uses clean package interface."""
-    cli.cls()
+    main_tui.cls()
     print(f"--- {APPNAVN} ---")
     print("GitHub Repository Search")
     print()
@@ -15,7 +15,7 @@ def app():
     print("• Repository search by name/description")
     print("• Clean CLI integration")
     print()
-    print(cli.LUKK_STR)
+    print(main_tui.LUKK_STR)
     print("-" * (len(APPNAVN) + 8))
 
     app()  # Clean exit back to main CLI
