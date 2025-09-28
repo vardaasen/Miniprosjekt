@@ -17,6 +17,10 @@ class Config:
         enter = chr(13)
         backspace = (chr(8), chr(127))  # win vs posix differences
         ctrlc = chr(3)
+        ESC = esc
+        ENTER = enter
+        BACKSPACE = backspace
+        CTRLC = ctrlc
 
     lukk_tast: Tuple[str, ...] = ("q", Keys.esc, Keys.ctrlc)
 

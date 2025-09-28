@@ -4,11 +4,13 @@
 .env
 .env.*
 !.env.example
-
 # Ignore log files
 *.log
 logs/
 *.log.*
+
+# Ignore program demo database
+*.db
 
 # Ignore temporary files
 *.tmp
