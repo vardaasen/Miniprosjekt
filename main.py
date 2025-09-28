@@ -5,8 +5,8 @@ from typing import Optional, List, Tuple, Dict, Any, Union
 from src.apps import Kristoffer, Willads, Chinh
 from src.apps.kalk import Start as Michael
 from src.apps import T_Feature_App
-from src.utils import cli
-
+from src.utils import main_tui
+from src.utils import main_tui as cli
 PROSJEKTNAVN = "Mini-prosjekt i Python (Gruppe 5)"
 
 # Tastevalg

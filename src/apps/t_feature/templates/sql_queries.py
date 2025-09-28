@@ -1,6 +1,7 @@
 # templates/sql_queries.py
 """
 Central repository for all SQL statements used in the application.
+By keeping them here, the code is easier to read
 """
 
 # Repository table
@@ -49,3 +50,9 @@ SAMPLE_STUDENTS = [
     ("Charlie Brown", "A-", "charlie@school.edu"),
     ("Diana Prince", "A", "diana@school.edu")
 ]
+
+SEARCH_STUDENTS_VULNERABLE = "SELECT name, grade, email FROM students WHERE name LIKE '%{term}%'"
+SELECT_STUDENT_ROBERT = "SELECT name, grade, email FROM students WHERE name LIKE '%Robert%'"
+LIST_TABLES = "SELECT name FROM sqlite_master WHERE type='table'"
+TABLE_SCHEMA = "SELECT sql FROM sqlite_master WHERE name = '{table}'"
+TABLE_ROWS = "SELECT * FROM {table}"
